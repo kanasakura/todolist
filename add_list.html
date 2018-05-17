@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "ja" >
+<head>
+ <mate charset = "utf-8">
+   <title>ToDoリスト</title>
+   <link rel = "stylesheet" href = "style.css">
+   <script type = "text/javascript" src = "js/todolist.js"></script>
+</head>
+
+  <body>
+
+      <div class = "wrapper">
+      <table width = "400" border = "1">
+      <h1>〜TODOリスト〜</h1>
+        <form id = "list-form">
+          <tr>
+            <td>リスト作成:</td>
+            <td colspan = "2"><input type = "text" id = "task" placeholder = "リスト内容"></td>
+          </tr>
+          <tr>
+            <td>期限:</td>
+            <td colspan = "2"><input type = "date" id = "deadline"></td>
+          </tr>
+          <tr>
+            <td>重要度:</td>
+            <td><select id = "lank">
+                <option value = "3">高</option>
+                <option value = "2">中</option>
+                <option value = "1">低</option>
+                </select></td>
+          </tr>
+          <tr>
+            <td>分類:</td>
+              <td><select id = "category">
+                  <option value = "work">仕事</option>
+                  <option value = "buy">買い物</option>
+                  <option value = "study">勉強</option>
+                  <option value = "private">私用</option>
+                  <option value = "etc">その他</option>
+                  </select></td>
+          </tr>
+          <tr>
+            <td>メモ:</td>
+            <td><textarea id ="memo" placeholder = "メモ"></textarea></td>
+          </tr>
+
+            <tr>
+              <!--<td><a href = "todo_index.html"><button type ="submit">戻る</a></td>-->
+              <td><button id = "creat" >作成</button></td>
+              <td><button id = "editB">編集!</button></td>
+            </tr>
+        </form>
+      </table>
+      <p id = "message"></p>
+
+      <br>
+      <div class = "res">
+        <dl class = "sort-button">
+          <td><button id = "date_sort">期日順</button></td>
+          <td><button id = "lank_sort">重要度順</button></td>
+      </dl>
+
+    </div>
+  </div>
+        <ul class ="resdata" id = "todo-list"></ul>
+
+
+
+
+
+
+  </body>
+
+  </html>

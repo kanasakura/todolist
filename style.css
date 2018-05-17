@@ -1,0 +1,52 @@
+table{
+    padding:0;
+    margin:0;
+}
+
+td{
+    padding:10px;
+    border:none;
+    }
+
+.wrapper {
+    width:400px;
+    margin:30px auto 0 auto;
+    }
+
+.res{
+    margin-bottom:20px;
+    border-bottom:1px #999 solid;
+    padding:10px;
+    font-size:12px;
+    line-height:1.4;
+    }
+
+
+.resdata {
+  list-style-type: none;
+  max-width: 700px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background: #cccccc;
+}
+.resdata li  {
+  margin-left:100px;
+  padding: 0;
+  text-align: left;
+}
+/* li.resdata td {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px 0 0;
+} */
+.sort-button  {
+  display: inline;
+  /* list-style: none; */
+  text-align: center;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+/* dl#resdata dd{
+    margin-left:120px;
+    } */
